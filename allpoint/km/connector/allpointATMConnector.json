@@ -227,8 +227,9 @@
           }
         }
       ]
-    ],
-    "scheduleConfig": {
+    }
+   ],
+   "scheduleConfig": {
       "customSchedule": {
         "timeZone": "America/New_York",
         "startDate": "2022-01-24",
