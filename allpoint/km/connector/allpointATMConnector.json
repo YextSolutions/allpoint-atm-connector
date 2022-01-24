@@ -134,16 +134,6 @@
   ],
   "mappings": [
     {
-      "field": "allpoint_additionalATMServices",
-      "header": "Additional Services",
-      "subfieldPath": []
-    },
-    {
-      "field": "allpoint_cashWithdrawalLimit",
-      "header": "Cash Withdrawal Limit",
-      "subfieldPath": []
-    },
-    {
       "field": "websiteUrl",
       "header": "Website Url",
       "subfieldPath": [
@@ -158,15 +148,6 @@
       "subfieldPath": [
         {
           "name": "postalCode"
-        }
-      ]
-    },
-    {
-      "field": "allpoint_aTMImage",
-      "header": "Image URL",
-      "subfieldPath": [
-        {
-          "name": "url"
         }
       ]
     },
@@ -189,11 +170,6 @@
       ]
     },
     {
-      "field": "allpoint_aTMMapURL",
-      "header": "Map Url",
-      "subfieldPath": []
-    },
-    {
       "field": "yextDisplayCoordinate",
       "header": "Longitude",
       "subfieldPath": [
@@ -205,11 +181,6 @@
     {
       "field": "name",
       "header": "Name",
-      "subfieldPath": []
-    },
-    {
-      "field": "allpoint_aTMServices",
-      "header": "Services",
       "subfieldPath": []
     },
     {
@@ -236,11 +207,6 @@
       "subfieldPath": []
     },
     {
-      "field": "allpoint_surchargeFee",
-      "header": "Surcharge Fee",
-      "subfieldPath": []
-    },
-    {
       "field": "fax",
       "header": "Fax",
       "subfieldPath": []
@@ -251,11 +217,6 @@
       "subfieldPath": []
     },
     {
-      "field": "allpoint_acceptsDeposit",
-      "header": "Accepts Deposit",
-      "subfieldPath": []
-    },
-    {
       "field": "address",
       "header": "Address Line 1",
       "subfieldPath": [
@@ -263,11 +224,6 @@
           "name": "line1"
         }
       ]
-    },
-    {
-      "field": "allpoint_aTMImageText",
-      "header": "Image Text",
-      "subfieldPath": []
     }
   ]
 }
