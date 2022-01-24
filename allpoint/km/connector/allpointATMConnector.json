@@ -6,8 +6,8 @@
   "source": {
     "sourceConfig": {
       "functionConfig": {
-        "plugin": "getAllpointATMs",
-        "function": "getAllpointATMs",
+        "plugin": "allpoint_getAllpointATMs",
+        "function": "allpoint_getAllpointATMs",
         "dataFormat": "JSON"
       }
     },
