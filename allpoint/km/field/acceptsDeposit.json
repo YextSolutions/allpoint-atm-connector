@@ -1,0 +1,31 @@
+{
+  "$id": "allpoint_acceptsDeposit",
+  "$schema": "https://schema.yext.com/config/km/field/v1",
+  "displayName": "Accepts Deposit",
+  "group": "NONE",
+  "localization": "PRIMARY_ONLY",
+  "type": {
+    "listType": {
+      "typeId": "option",
+      "type": {
+        "optionType": {
+          "option": [
+            {
+              "displayName": "Yes",
+              "textValue": "YES"
+            },
+            {
+              "displayName": "No",
+              "textValue": "NO"
+            },
+            {
+              "displayName": "Unspecified",
+              "textValue": "UNSPECIFIED"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "typeId": "list"
+}

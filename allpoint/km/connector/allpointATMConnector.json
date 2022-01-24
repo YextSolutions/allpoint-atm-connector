@@ -1,0 +1,273 @@
+{
+  "$id": "allpoint_allpointATMConnector",
+  "$schema": "https://schema.yext.com/config/km/connector/v3",
+  "displayName": "Allpoint ATM Connector",
+  "entityType": "atm",
+  "source": {
+    "sourceConfig": {
+      "functionConfig": {
+        "plugin": "getAllpointATMs",
+        "function": "getAllpointATMs",
+        "dataFormat": "JSON"
+      }
+    },
+    "baseSelector": {
+      "type": "JSON",
+      "header": "Entity Container",
+      "path": "data.locations"
+    },
+    "selectors": [
+      {
+        "type": "JSON",
+        "header": "ID",
+        "path": "id"
+      },
+      {
+        "type": "JSON",
+        "header": "Name",
+        "path": "attributes.LocationName"
+      },
+      {
+        "type": "JSON",
+        "header": "Address Line 1",
+        "path": "address.street"
+      },
+      {
+        "type": "JSON",
+        "header": "City",
+        "path": "address.city"
+      },
+      {
+        "type": "JSON",
+        "header": "State",
+        "path": "address.state"
+      },
+      {
+        "type": "JSON",
+        "header": "Postal Code",
+        "path": "address.zip"
+      },
+      {
+        "type": "JSON",
+        "header": "Country",
+        "path": "address.country"
+      },
+      {
+        "type": "JSON",
+        "header": "Fax",
+        "path": "attributes.Fax"
+      },
+      {
+        "type": "JSON",
+        "header": "Phone Number",
+        "path": "attributes.Phone"
+      },
+      {
+        "type": "JSON",
+        "header": "Website Url",
+        "path": "attributes.WebsiteUrl"
+      },
+      {
+        "type": "JSON",
+        "header": "Latitude",
+        "path": "attributes.Latitude"
+      },
+      {
+        "type": "JSON",
+        "header": "Longitude",
+        "path": "attributes.Longitude"
+      },
+      {
+        "type": "JSON",
+        "header": "Services",
+        "path": "services.service"
+      },
+      {
+        "type": "JSON",
+        "header": "Additional Services",
+        "path": "additionalServices.service"
+      },
+      {
+        "type": "JSON",
+        "header": "Accepts Deposit",
+        "path": "attributes.AcceptsDeposit"
+      },
+      {
+        "type": "JSON",
+        "header": "Cash Withdrawal Limit",
+        "path": "attributes.CashWithdrawLimit"
+      },
+      {
+        "type": "JSON",
+        "header": "Image URL",
+        "path": "attributes.ImageURL"
+      },
+      {
+        "type": "JSON",
+        "header": "Image Text",
+        "path": "attributes.ImageText"
+      },
+      {
+        "type": "JSON",
+        "header": "Map Url",
+        "path": "attributes.MapUrl"
+      },
+      {
+        "type": "JSON",
+        "header": "Surcharge Fee",
+        "path": "attributes.SurchargeFee"
+      }
+    ]
+  },
+  "transforms": [
+    {
+      "function": {
+        "inputHeaders": {
+          "headers": [
+            "Country"
+          ]
+        },
+        "plugin": "countryToCode",
+        "function": "countryToCode"
+      }
+    }
+  ],
+  "mappings": [
+    {
+      "field": "allpoint_additionalATMServices",
+      "header": "Additional Services",
+      "subfieldPath": []
+    },
+    {
+      "field": "allpoint_cashWithdrawalLimit",
+      "header": "Cash Withdrawal Limit",
+      "subfieldPath": []
+    },
+    {
+      "field": "websiteUrl",
+      "header": "Website Url",
+      "subfieldPath": [
+        {
+          "name": "url"
+        }
+      ]
+    },
+    {
+      "field": "address",
+      "header": "Postal Code",
+      "subfieldPath": [
+        {
+          "name": "postalCode"
+        }
+      ]
+    },
+    {
+      "field": "allpoint_aTMImage",
+      "header": "Image URL",
+      "subfieldPath": [
+        {
+          "name": "url"
+        }
+      ]
+    },
+    {
+      "field": "yextDisplayCoordinate",
+      "header": "Latitude",
+      "subfieldPath": [
+        {
+          "name": "latitude"
+        }
+      ]
+    },
+    {
+      "field": "address",
+      "header": "City",
+      "subfieldPath": [
+        {
+          "name": "city"
+        }
+      ]
+    },
+    {
+      "field": "allpoint_aTMMapURL",
+      "header": "Map Url",
+      "subfieldPath": []
+    },
+    {
+      "field": "yextDisplayCoordinate",
+      "header": "Longitude",
+      "subfieldPath": [
+        {
+          "name": "longitude"
+        }
+      ]
+    },
+    {
+      "field": "name",
+      "header": "Name",
+      "subfieldPath": []
+    },
+    {
+      "field": "allpoint_aTMServices",
+      "header": "Services",
+      "subfieldPath": []
+    },
+    {
+      "field": "address",
+      "header": "State",
+      "subfieldPath": [
+        {
+          "name": "region"
+        }
+      ]
+    },
+    {
+      "field": "address",
+      "header": "Country",
+      "subfieldPath": [
+        {
+          "name": "countryCode"
+        }
+      ]
+    },
+    {
+      "field": "entityId",
+      "header": "ID",
+      "subfieldPath": []
+    },
+    {
+      "field": "allpoint_surchargeFee",
+      "header": "Surcharge Fee",
+      "subfieldPath": []
+    },
+    {
+      "field": "fax",
+      "header": "Fax",
+      "subfieldPath": []
+    },
+    {
+      "field": "mainPhone",
+      "header": "Phone Number",
+      "subfieldPath": []
+    },
+    {
+      "field": "allpoint_acceptsDeposit",
+      "header": "Accepts Deposit",
+      "subfieldPath": []
+    },
+    {
+      "field": "address",
+      "header": "Address Line 1",
+      "subfieldPath": [
+        {
+          "name": "line1"
+        }
+      ]
+    },
+    {
+      "field": "allpoint_aTMImageText",
+      "header": "Image Text",
+      "subfieldPath": []
+    }
+  ]
+}
