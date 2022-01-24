@@ -7,7 +7,7 @@ export async function allpoint_getAllpointATMs(inputString: string): string {
         requestUrl = `${requestUrl}&pagination_token=${pageToken}`
     }
 
-    const response = await fetch(requestUrl, {method: 'POST', headers: {"Content-Type": "application/json"}, body: '{"UserName": "${allpointUsername}","Password": "${allpointPassword}","Type": ""}'}).then(response => response.json())
+    const response = await fetch(requestUrl, {method: 'POST', headers: {"Content-Type": "application/json"}, body: '{"UserName": ${allpointUsername},"Password": ${allpointPassword},"Type": ""}'}).then(response => response.json())
     const outputString = JSON.stringify({"data": response})
 
     return outputString;
