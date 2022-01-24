@@ -838,36 +838,6 @@
       ]
     },
     {
-      "displayName": "Allpoint Fields",
-      "entryType": "SECTION",
-      "fields": [
-        {
-          "id": "allpoint_acceptsDeposit"
-        },
-        {
-          "id": "allpoint_aTMServices"
-        },
-        {
-          "id": "allpoint_additionalATMServices"
-        },
-        {
-          "id": "allpoint_cashWithdrawalLimit"
-        },
-        {
-          "id": "allpoint_surchargeFee"
-        },
-        {
-          "id": "allpoint_aTMImage"
-        },
-        {
-          "id": "allpoint_aTMImageText"
-        },
-        {
-          "id": "allpoint_aTMMapURL"
-        }
-      ]
-    },
-    {
       "displayName": "Other",
       "displayNameTranslations": [
         {
