@@ -1,0 +1,19 @@
+{
+  "$id": "allpoint_additionalATMServices",
+  "$schema": "https://schema.yext.com/config/km/field/v1",
+  "description": "",
+  "displayName": "Additional ATM Services",
+  "group": "NONE",
+  "localization": "PRIMARY_ONLY",
+  "type": {
+    "listType": {
+      "typeId": "string",
+      "type": {
+        "stringType": {
+          "stereotype": "SIMPLE"
+        }
+      }
+    }
+  },
+  "typeId": "list"
+}

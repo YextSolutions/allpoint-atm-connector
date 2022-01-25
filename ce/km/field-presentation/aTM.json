@@ -69,6 +69,36 @@
         ]
       },
       {
+        "displayName": "Allpoint Fields",
+        "entryType": "SECTION",
+        "fields": [
+          {
+            "id": "allpoint_acceptsDeposit"
+          },
+          {
+            "id": "allpoint_aTMImage"
+          },
+          {
+            "id": "allpoint_aTMImageText"
+          },
+          {
+            "id": "allpoint_aTMMapURL"
+          },
+          {
+            "id": "allpoint_aTMServices"
+          },
+          {
+            "id": "allpoint_additionalATMServices"
+          },
+          {
+            "id": "allpoint_cashWithdrawalLimit"
+          },
+          {
+            "id": "allpoint_surchargeFree"
+          }
+        ]
+      },
+      {
         "displayName": "Contact, Websites, and Apps",
         "entryType": "SECTION",
         "fields": [

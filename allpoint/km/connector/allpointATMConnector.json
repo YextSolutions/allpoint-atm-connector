@@ -134,6 +134,16 @@
   ],
   "mappings": [
     {
+      "field": "allpoint_additionalATMServices",
+      "header": "Additional Services",
+      "subfieldPath": []
+    },
+    {
+      "field": "allpoint_cashWithdrawalLimit",
+      "header": "Cash Withdrawal Limit",
+      "subfieldPath": []
+    },
+    {
       "field": "websiteUrl",
       "header": "Website Url",
       "subfieldPath": [
@@ -148,6 +158,15 @@
       "subfieldPath": [
         {
           "name": "postalCode"
+        }
+      ]
+    },
+    {
+      "field": "allpoint_aTMImage",
+      "header": "Image URL",
+      "subfieldPath": [
+        {
+          "name": "url"
         }
       ]
     },
@@ -170,6 +189,11 @@
       ]
     },
     {
+      "field": "allpoint_aTMMapURL",
+      "header": "Map Url",
+      "subfieldPath": []
+    },
+    {
       "field": "yextDisplayCoordinate",
       "header": "Longitude",
       "subfieldPath": [
@@ -181,6 +205,11 @@
     {
       "field": "name",
       "header": "Name",
+      "subfieldPath": []
+    },
+    {
+      "field": "allpoint_aTMServices",
+      "header": "Services",
       "subfieldPath": []
     },
     {
@@ -217,6 +246,11 @@
       "subfieldPath": []
     },
     {
+      "field": "allpoint_acceptsDeposit",
+      "header": "Accepts Deposit",
+      "subfieldPath": []
+    },
+    {
       "field": "address",
       "header": "Address Line 1",
       "subfieldPath": [
@@ -224,15 +258,16 @@
           "name": "line1"
         }
       ]
-    }
-  ],
-  "scheduleConfig": {
-    "customSchedule": {
-      "timeZone": "America/New_York",
-      "startDate": "2022-01-24",
-      "startTime": "00:00",
-      "frequencyType": "DAILY"
     },
-    "runMode": "COMPREHENSIVE"
-  }
+    {
+      "field": "allpoint_aTMImageText",
+      "header": "Image Text",
+      "subfieldPath": []
+    },
+    {
+      "field": "allpoint_surchargeFee",
+      "header": "Surcharge Fee",
+      "subfieldPath": []
+    }
+  ]
 }
