@@ -1,0 +1,16 @@
+{
+  "$id": "atm.default",
+  "$schema": "https://schema.yext.com/config/km/field-eligibility-group/v1",
+  "name": "ATM-default",
+  "entityType": "atm",
+  "fields": [
+    "allpoint_acceptsDeposit",
+    "allpoint_additionalATMServices",
+    "allpoint_aTMImage",
+    "allpoint_aTMImageText",
+    "allpoint_aTMMapURL",
+    "allpoint_aTMServices",
+    "allpoint_cashWithdrawalLimit",
+    "allpoint_surchargeFee"
+  ]
+}
