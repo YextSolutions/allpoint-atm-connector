@@ -1,5 +1,5 @@
 {
-    "$id": "ce_aTM",
+    "$id": "allpoint_aTM",
     "$schema": "https://schema.yext.com/config/km/field-presentation/v1",
     "entityType": "atm",
     "displayName": "ATM",

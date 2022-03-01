@@ -1,7 +1,7 @@
 {
-  "$id": "atm.default",
+  "$id": "allpoint_atm",
   "$schema": "https://schema.yext.com/config/km/field-eligibility-group/v1",
-  "name": "ATM-default",
+  "name": "ATM",
   "entityType": "atm",
   "fields": [
     "allpoint_acceptsDeposit",

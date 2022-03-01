@@ -127,7 +127,7 @@
             "Country"
           ]
         },
-        "plugin": "countryToCode",
+        "plugin": "allpoint_countryToCode",
         "function": "countryToCode"
       }
     }
