@@ -1,4 +1,4 @@
-# allpoint-atm-connector
+##### allpoint-atm-connector
 # Product Description & Purpose
 
 Sync your ATM location data to Yext to easily manage all for your ATM listings across Yext’s 200+ publisher network. Allpoint is the on-demand cash access solution for banks, credit unions, prepaid programs, and Fintechs. Built on a network of 55,000 ATMs located in premier retail settings, Allpoint Network solves your cash distribution and deposit acceptance needs.
