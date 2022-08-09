@@ -5,16 +5,14 @@
   "entityType": "atm",
   "source": {
     "sourceConfig": {
-      "functionConfig": {
-        "plugin": "allpoint_getAllpointATMs",
-        "function": "allpoint_getAllpointATMs",
-        "dataFormat": "JSON"
+      "nativeSourceConfig": {
+        "source": "allpoint",
+        "operation": "fetchATMs",
+        "inputs": {
+          "username": "${{allpointUserName}}",
+          "password": "${{allpointPassword}}"
+        }
       }
-    },
-    "baseSelector": {
-      "type": "JSON",
-      "header": "Entity Container",
-      "path": "data.locations"
     },
     "selectors": [
       {
