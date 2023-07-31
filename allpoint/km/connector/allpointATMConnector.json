@@ -1,6 +1,6 @@
 {
     "$id": "allpoint_allpointATMConnector",
-    "$schema": "https://schema.yext.com/config/km/connector/v3",
+    "$schema": "https://schema.yext.com/config/km/connector/v4",
     "displayName": "Allpoint ATM Connector",
     "entityTypes": [
         "atm"
