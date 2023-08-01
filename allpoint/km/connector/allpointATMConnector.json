@@ -171,13 +171,14 @@
             ]
         },
         {
-            "field": "displayCoordinate",
             "header": "Latitude",
+            "field": "displayCoordinate",
             "subfieldPath": [
                 {
                     "name": "latitude"
                 }
-            ]
+            ],
+            "clearValueIfBlank": false
         },
         {
             "field": "address",
@@ -194,13 +195,14 @@
             "subfieldPath": []
         },
         {
-            "field": "displayCoordinate",
             "header": "Longitude",
+            "field": "displayCoordinate",
             "subfieldPath": [
                 {
                     "name": "longitude"
                 }
-            ]
+            ],
+            "clearValueIfBlank": false
         },
         {
             "field": "name",
